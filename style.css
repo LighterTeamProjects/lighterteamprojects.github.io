@@ -177,16 +177,17 @@ body::selection{
     color:rgb(0, 0, 0);
    margin-top: 2%;
 }
-.discord{
-    width: 2%;
-    transform: scale(2.1);
-    height: auto;
-    max-width: 2%;
-    max-height: 2%; 
-    padding-left:16.6%;
-    padding-top: 1%;
-    
+.lighterpc .discord {
+  width: 2%;
+  transform: scale(2.1);
+  height: 2%;
+  max-width: 2%;
+  max-height: 2%;
+  margin-left: 26%;
+  margin-top: 1%;
 }
+
+    
 
 /*responsive del menu o navegador,pero es parte del section con la clase order xd*/
 
@@ -243,7 +244,7 @@ body::selection{
         align-items: center;
         margin-top:280%;
     }
-}
+} 
 
 @media (min-width: 1084px) { 
     .imagen{
