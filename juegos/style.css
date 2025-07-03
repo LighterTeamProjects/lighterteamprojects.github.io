@@ -1,10 +1,10 @@
 
-.jaro-<uniquifier> {
+body{
   font-family: "Jaro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
+
 body {
     overflow:hidden;
     user-select: none;
