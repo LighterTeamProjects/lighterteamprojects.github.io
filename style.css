@@ -191,7 +191,7 @@ body::selection{
 
 /*responsive del menu o navegador,pero es parte del section con la clase order xd*/
 
-@media (min-width: 670px) { 
+@media (min-width: 670px) {  
     .menu {
         height: 96vh;
         padding-left: 2%;
@@ -281,10 +281,10 @@ body::selection{
     .link{
         padding: 0;
     }
-    /*.imagen{
+    .imagen{
         width:10%;
         height:18ch;
-    } Esto es para que sea un poco mas adaptable*/
+    } 
     .scrollable-container {
         overflow: auto;  /* O usa overflow: scroll */
         width: 65%;
@@ -292,6 +292,132 @@ body::selection{
         min-height: 8%;
         border-radius: 5px;
     }
+    
+
+
+    @media (max-width: 950px) {
+  /* Menú responsive: pasa de columna a fila arriba */
+  .menu {
+    position: relative;
+    width: 100%;
+    flex-direction: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    height: auto;
+    background-color: rgba(85, 85, 85, 0.9);
+  }
+
+  .menu ul {
+    flex-direction: row;
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .menu li {
+    text-align: center;
+  }
+
+  .menu .portada {
+    padding-left: 0;
+  }
+
+  /* Ocultar imagen decorativa grande si molesta */
+  .portada .imagen {
+    display: none;
+  }
+
+  /* Sección de contenido */
+  .desp {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .games {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .boxlist {
+    width: 70%;
+    height: auto;
+  }
+
+  .boxlist img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .boxlist h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .scrollable-container {
+    width: 90%;
+    height: auto;
+    max-height: none;
+  }
+
+  .lighterpc .discord {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .link {
+    padding: 0;
+    gap: 10px;
+  }
+
+  .nosotrostres,
+  .nosotrosuno,
+  .nosotrosdos,
+  .informacionuno,
+  .informaciondos {
+    padding-left: 1%;
+    font-size: 100%;
+  }
+}
+/* Ajustar texto de "Sobre Nosotros" */
+.desp {
+  padding: 20px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.4;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Centrar menú y espaciado horizontal */
+.menu ul {
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo o imagen final (ese que se ve recortado) */
+.lighterpc .discord,
+.portada img {
+  width: 60px !important;
+  height: auto !important;
+  display: block;
+  margin: px auto;
+  object-fit: contain;
+}
+
+/* Añadir espacio debajo de todo */
+body {
+  padding-bottom: 40px;
+}
+
     
 
 }
